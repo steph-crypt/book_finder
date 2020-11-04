@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Author from "./Author"
 
  const App = () => {
-    return (
+    return ([
         <div id="important">
           <h1>Feminist Authors</h1>
             <Author name="Toni Morrison" category="Feminist" intersectionality="POC"/>
@@ -14,4 +14,3 @@ import Author from "./Author"
   };
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
-
