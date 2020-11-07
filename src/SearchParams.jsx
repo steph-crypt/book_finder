@@ -1,4 +1,7 @@
 import React from "react";
+import React, {useState} from "react";
+
+const [location, setLocation] = useState("San Francisco, CA");
 
 const SearchParams = () => {
   const location = "San Francisco, CA";
@@ -7,7 +10,11 @@ const SearchParams = () => {
       <form>
         <label htmlFor="location">
         location
-          <input id="location" value={location} placeholder="Location"/>
+          <input id="location"
+          value={location}
+          placeholder="Location"
+          onChange={e => setLocation(e.target.value)}
+          />;
         </label>
         <button>Submit</button>
       </form>
