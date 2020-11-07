@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   color: #333;
+  padding: 10px;
+  margin-left: 5px;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
 }
 
 .search-params form {
-  background-color: #d9c148;
+  background-color: #c76060;
   width: 360px;
   margin: 0px 25px 0px 0px;
   padding: 35px 15px 15px 15px;
@@ -25,7 +27,7 @@ body {
 }
 
 .search {
-  background-color: #d9c148;
+  background-color: #c76060;
   width: 715px;
   padding: 15px;
   border-radius: 9px;
@@ -87,11 +89,12 @@ body {
 header > a,
 #root > div > h1 {
   display: inline-block;
-  background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-logo.png);
-  width: 279px;
+ /*background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-logo.png);*/
+/*  width: 279px;*/
   height: 76px;
   overflow: hidden;
-  text-indent: -9999px;
+/*  text-indent: -9999px;*/
+  font-size: 47px;
 }
 
 .pet h2 {

@@ -1,20 +1,22 @@
-import React from "react";
 import React, {useState} from "react";
 
-const [location, setLocation] = useState("San Francisco, CA");
-
 const SearchParams = () => {
-  const location = "San Francisco, CA";
+  const [genre, setGenre] = useState("Feminism");
+  // const [author, setAuthor] = usestate([]);
+  // const [intersectionality, setIntersectionality] = useSate("POC");
+  // const [books, setBooks] = useState([]);
+  const [apikey, setApikey] = useState("AIzaSyBxe49CrSJ07GE8xsGDKUAw2punWq04Cl4");
+
   return (
     <div className="search params">
       <form>
-        <label htmlFor="location">
-        location
-          <input id="location"
-          value={location}
-          placeholder="Location"
-          onChange={e => setLocation(e.target.value)}
-          />;
+        <label htmlFor="genre">
+        Genre
+          <input id="genre"
+          value={genre}
+          placeholder="Genre"
+          onChange={e => setGenre(e.target.value)}
+          />
         </label>
         <button>Submit</button>
       </form>
